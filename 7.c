@@ -6,8 +6,8 @@ int main()
     printf("Enter a number : ");
     scanf("%d",&num);
     for(int i = 0; i < num; i++){
-        for(int j = 0; j < num; j++){
-            printf("* ");
+        for(int j = 0; j <= num - i; j++){
+            printf("%c", 65 + j);
         }
         printf("\n");
     }
@@ -15,8 +15,8 @@ int main()
     return 0;
 }
 
-// * * * * *
-// * * * * *
-// * * * * *
-// * * * * *
-// * * * * *
+//  ABCDE
+//   ABCD
+//    ABC
+//     AB
+//      A
